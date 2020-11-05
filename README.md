@@ -1,7 +1,7 @@
 # vue 文件（图片）上传组件
 
 ## 安装
-`npm install pic-upload` or `yarn add pic-upload`
+`npm install file2upload` or `yarn add file2upload`
 
 `Tip`：如果stylus-loader报错，降级到3即可
 

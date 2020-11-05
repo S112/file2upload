@@ -1,5 +1,5 @@
 {
-  "name": "pic-upload",
+  "name": "file2upload",
   "version": "1.0.0",
   "description": "图片上传",
   "main": "src/index.js",
@@ -8,14 +8,13 @@
     "prod": "webpack --config build/webpack.config.prod.js"
   },
   "keywords": [
-    "pic",
-    "picture",
-    "pic-upload",
-    "img",
-    "image"
+    "file",
+    "upload",
+    "file2upload",
+    "file-upload"
   ],
   "author": "luis.wang",
-  "homepage": "https://github.com/S112/pic-upload",
+  "homepage": "https://github.com/S112/file2upload",
   "license": "MIT",
   "dependencies": {
     "vue": "^2.6.11",
