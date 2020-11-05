@@ -3,7 +3,7 @@
   <slot>
     <div class="btn-def"><i></i></div>
   </slot>
-  <input class="btn-input" type="file" :multiple="multiple" @change="changeHandler" />
+  <input class="btn-input" type="file" :accept="accept" :multiple="multiple" @change="changeHandler" />
 </div>
 </template>
 
@@ -11,6 +11,10 @@
 export default {
   name: 'btn',
   props: {
+    accept: { // 文件上传类型
+      type: String,
+      default: 'image/*'
+    },
     multiple: { // 是否允许用户选择多个文件
       type: Boolean,
       default: true

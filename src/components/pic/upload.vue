@@ -3,7 +3,7 @@
   <slot>
     <div class="upload-def clear-fix" :tag="tag">
       <File v-for="(file, i) in value" :file="file" :key="i" @click="clickFile" @remove="removeFile" />
-      <Btn :multiple="multiple" v-show="isShowBtn" @add="addFiles" />
+      <Btn :accept="accept" :multiple="multiple" v-show="isShowBtn" @add="addFiles" />
     </div>
   </slot>
 </div>
@@ -40,6 +40,10 @@ export default {
     beforeUploadCheck: {
       type: Function,
       default: null
+    },
+    accept: {
+      type: String,
+      default: 'image/*'
     },
     multiple: {
       type: Boolean,
