@@ -26,7 +26,8 @@ export default {
     },
     action: {
       type: String,
-      default: ''
+      default: '',
+      required: true
     },
     max: {
       type: Number,

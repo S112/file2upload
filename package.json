@@ -17,8 +17,7 @@
   "homepage": "https://github.com/S112/file2upload",
   "license": "MIT",
   "dependencies": {
-    "vue": "^2.6.11",
-    "vue-router": "^3.4.8"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
