@@ -3,9 +3,9 @@
 ## 安装
 `npm install file2upload` or `yarn add file2upload`
 
-`Tip`：如果stylus-loader报错，降级到3即可
+`Tip`：如果stylus-loader报错，是因为版本较高，需要降级到3.0.2
 
-## 属性3.0.2
+## 属性
 |字段|描述|值类型|
 |-|-|-|
 |v-model|文件数据|Array
