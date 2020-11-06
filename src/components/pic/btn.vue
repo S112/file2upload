@@ -60,7 +60,7 @@ export default {
     background-color: $upload-btn-bgc;
     box-shadow: $upload-btn-box-shadow;
     border-radius: 2px;
-    border:1px dashed $upload-btn-border-color;
+    border: 1px dashed $upload-btn-border-color;
     > i {
       &::before, &::after {
         content: "";

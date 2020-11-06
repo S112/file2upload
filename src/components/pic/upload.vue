@@ -153,13 +153,6 @@ export default {
 <style lang="stylus" scoped>
 .upload {
   position: relative;
-  .upload-def {
-    margin-right: -10px;
-    .upload-btn, .upload-file {
-      float: left;
-      margin: 0 10px 10px 0;
-    }
-  }
   .clear-fix {
     &::after {
       content: '';

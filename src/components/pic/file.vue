@@ -91,7 +91,7 @@ export default {
       border-radius: 50%;
     }
   }
-  .h5-upload-video-state, .file-state {
+  .file-state {
     position: relative;
     width: 100%;
     height: 100%;
@@ -114,7 +114,6 @@ export default {
       background-color: rgba(0, 0, 0, .1);
     }
   }
-  .h5-upload-video-state { position:relative; object-fit:fill; }
   .file_stat { opacity: 1; }
   .file-status {
     position: relative;

@@ -2,8 +2,8 @@
 <div class="demo">
   <p v-show="title" class="title" v-text="title"></p>
   <p v-show="desc" class="desc" v-text="desc"></p>
-  <div class="upload-box clear">
-    <Pic v-model="picArr" :action="option.action" :max="option.max" :simultaneous-uploads="option.simultaneousUploads" :beforeUploadCheck="beforeUploadCheck"
+  <div class="upload-box">
+    <Pic v-model="picArr" :action="option.action" :beforeUploadCheck="beforeUploadCheck"
     @file-success="fileSuc" @file-error="fileError" @file-removed="fileRemoved" />
   </div>
 </div>
@@ -23,9 +23,7 @@ export default {
       title: '请上传3张图片',
       desc: '1.图片1, 2.图片2, 3.图片3',
       option: {
-        action: 'https://jsonplaceholder.typicode.com/photos/',
-        max: 3,
-        simultaneousUploads: 3
+        action: 'https://jsonplaceholder.typicode.com/photos/'
       }
     }
   },
@@ -64,14 +62,19 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-@import "../../assets/css/border.styl";
+<style lang="stylus">
 .demo {
-  .test {
-    all-border-1px(#e5e5e5);
-    width: 100px;
-    height: 100px;
+  .upload {
+    .file, .btn {
+      float: left
+      margin: 0 10px 10px 0
+    }
   }
+}
+</style>
+
+<style lang="stylus" scoped>
+.demo {
   .title {
     font-size 14px
     line-height 16px
@@ -79,54 +82,7 @@ export default {
   .desc {
     font-size 12px
     line-height 16px
-    color #AA22F6
+    color #999
   }
-
-  .clear {
-    zoom: 1;
-    .before {
-      content: ' ';
-      clear: both;
-      display: block;
-    }
-  }
-  .upload-box {
-    padding-top: 10px;
-  }
-  .upload-btn {
-    padding-top: 15px;
-    position: relative;
-    overflow: hidden;
-    &:active {
-      .upload-btn-def { background-color: rgba(0, 0, 0, .04); }
-    }
-    .upload-btn-def {
-      position: relative;
-      width: 80px;
-      height: 80px;
-      box-sizing: border-box;
-      background-color: #fff;
-      border-radius: 2px;
-      all-border-1px(#e5e5e5);
-      > i {
-        &::before, &::after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 20px;
-          height: 2px;
-          transform: translate(-50%, -50%);
-          background-color: #666;
-        }
-        &::after {
-          transform: translate(-50%, -50%) rotate(90deg);
-        }
-      }
-    }
-  }
-  .mt10 { margin-top: 10px; }
-  .red { color: #ff4556; }
-  .fs12 { font-size: 12px; }
 }
 </style>
