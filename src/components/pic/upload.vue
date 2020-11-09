@@ -127,9 +127,7 @@ export default {
       }
     },
     clickFile (file) {
-      if (file.status === 'success') {
-        const index = this.value.indexOf(file)
-      }
+      const index = this.value.indexOf(file)
       this.$emit('file-click', file, index)
     },
     removeFile (file) {
