@@ -19,7 +19,7 @@
 ## 事件
 |字段|描述|回调参数
 |-|-|-|
-|file-success|文件上传成功后触发|file 对象
-|file-error|文件上传失败后触发|file 对象
+|file-success|文件上传成功后触发|file 对象，index 索引值
+|file-error|文件上传失败后触发|file 对象，index 索引值
 |file-removed|文件删除后触发|file 对象，index 索引值
 |file-click|文件点击后触发|file 对象，index 索引值

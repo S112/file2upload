@@ -52,13 +52,15 @@ export default {
       console.log(`${file.name}删除成功`)
       console.log(index)
     },
-    fileError (file) {
+    fileError (file, index) {
       console.log(this.picArr)
       console.log(`${file.name}上传失败`)
+      console.log(index)
     },
-    fileSuc (file) {
+    fileSuc (file, index) {
       console.log(this.picArr)
       console.log(`${file.name}上传成功`)
+      console.log(index)
       // 从 file.response 里面获取 图片路径
     }
   },

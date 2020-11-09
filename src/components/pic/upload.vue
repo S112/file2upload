@@ -116,7 +116,8 @@ export default {
             if (status === _error) {
               file._retryId = this.retryId
             }
-            this.$emit(file.status === _success ? 'file-success' : 'file-error', file, this.tag)
+            const index = this.value.indexOf(file)
+            this.$emit(file.status === _success ? 'file-success' : 'file-error', file, index)
             this.upload(retry)
           })
           uploadingCount++
