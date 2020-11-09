@@ -1,6 +1,6 @@
 {
   "name": "file2upload",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "图片上传",
   "main": "src/index.js",
   "scripts": {
