@@ -3,8 +3,8 @@
   <p v-show="title" class="title" v-text="title"></p>
   <p v-show="desc" class="desc" v-text="desc"></p>
   <div class="upload-box">
-    <Pic v-model="picArr" :action="option.action" :beforeUploadCheck="beforeUploadCheck"
-    @file-success="fileSuc" @file-error="fileError" @file-removed="fileRemoved" />
+    <Pic v-model="picArr" :action="option.action" :max="option.max" :beforeUploadCheck="beforeUploadCheck"
+    @file-success="fileSuc" @file-error="fileError" @file-removed="fileRemoved" @file-click="fileClick" />
   </div>
 </div>
 </template>
@@ -23,6 +23,7 @@ export default {
       title: '请上传3张图片',
       desc: '1.图片1, 2.图片2, 3.图片3',
       option: {
+        max: 3,
         action: 'https://jsonplaceholder.typicode.com/photos/'
       }
     }
@@ -43,8 +44,13 @@ export default {
         file.ignore = true
       }
     },
-    fileRemoved (file) {
+    fileRemoved (file, index) {
       console.log(`${file.name}删除成功`)
+      console.log(index)
+    },
+    fileClick (file, index) {
+      console.log(`${file.name}删除成功`)
+      console.log(index)
     },
     fileError (file) {
       console.log(this.picArr)

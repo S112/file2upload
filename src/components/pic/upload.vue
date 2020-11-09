@@ -130,7 +130,7 @@ export default {
       if (file.status === 'success') {
         const index = this.value.indexOf(file)
       }
-      this.$emit('file-click', file)
+      this.$emit('file-click', file, index)
     },
     removeFile (file) {
       file._xhr && file._xhr.abort()
@@ -140,7 +140,7 @@ export default {
       const index = this.value.indexOf(file)
       this.value.splice(index, 1)
       // this.upload()
-      this.$emit('file-removed', file)
+      this.$emit('file-removed', file, index)
     }
   },
   components: {
