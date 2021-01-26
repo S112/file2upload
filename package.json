@@ -2,7 +2,7 @@
   "name": "file2upload",
   "version": "1.1.0",
   "description": "图片上传",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --config build/webpack.config.dev.js",
     "prod": "webpack --config build/webpack.config.prod.js"

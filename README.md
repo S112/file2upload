@@ -3,8 +3,6 @@
 ## 安装
 `npm install file2upload` or `yarn add file2upload`
 
-`Tip`：如果stylus-loader报错，是因为版本较高，需要降级到3.0.2
-
 ## 属性
 |字段|描述|值类型|默认值|
 |-|-|-|-|
@@ -23,3 +21,6 @@
 |file-error|文件上传失败后触发|file 对象，index 索引值
 |file-removed|文件删除后触发|file 对象，index 索引值
 |file-click|文件点击后触发|file 对象，index 索引值
+
+## 使用范例
+通过 `npm run dev` 查看使用范例

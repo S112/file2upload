@@ -3,6 +3,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 const utils = require('./utils')
 
 module.exports = {
+  entry:'./src/main.js',
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
